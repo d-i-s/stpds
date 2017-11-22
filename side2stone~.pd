@@ -1,0 +1,12 @@
+#N canvas 510 154 450 300 10;
+#X obj 92 32 inlet~;
+#X obj 92 189 outlet~ LFU;
+#X obj 172 189 outlet~ RFD;
+#X obj 252 189 outlet~ RBU;
+#X obj 332 189 outlet~ LBD;
+#X obj 172 127 *~ -1;
+#X connect 0 0 1 0;
+#X connect 0 0 5 0;
+#X connect 0 0 4 0;
+#X connect 5 0 2 0;
+#X connect 5 0 3 0;
