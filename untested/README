@@ -1,2 +1,2 @@
 untested pd patches.
-todo:
+todo: calcolare i valori da mandare al [biquad~]. una volta decisi, inserire e collegare [highshelf]--> [print], stampare i valori del [biquad~] e inserirli nel [biquad~] nell'abs [sig2stone~].
