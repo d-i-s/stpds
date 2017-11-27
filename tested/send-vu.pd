@@ -1,0 +1,26 @@
+#N canvas 673 137 450 300 10;
+#X obj 92 137 inlet~;
+#X obj 92 164 env~ 8192;
+#X obj 238 203 switch~;
+#X obj 92 259 s \$1;
+#X obj 238 179 r \$2;
+#X text 27 24 drive a VU meter from an audio signal. 100 dB is readjusted
+to +12 which is the top of the scale for the IEMGUI VU meter.;
+#X text 25 76 \$1 is a send name to get to the meter;
+#X text 25 100 \$2 is a receive to turn on and off;
+#X obj 194 206 sel 0;
+#X obj 194 232 -100;
+#X obj 136 217 - 88;
+#X obj 92 194 moses 1;
+#X msg 92 216 -100;
+#X text 281 177 meters;
+#X connect 0 0 1 0;
+#X connect 1 0 11 0;
+#X connect 4 0 2 0;
+#X connect 4 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 3 0;
+#X connect 10 0 3 0;
+#X connect 11 0 12 0;
+#X connect 11 1 10 0;
+#X connect 12 0 3 0;

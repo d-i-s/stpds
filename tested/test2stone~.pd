@@ -29,6 +29,8 @@
 #X msg 449 184 0;
 #X msg 397 105 0;
 #X obj 397 85 sel 0;
+#X obj 413 12 loadbang;
+#X msg 413 32 -1;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 1 0 5 0;
@@ -74,3 +76,5 @@
 #X connect 27 0 4 0;
 #X connect 27 0 8 0;
 #X connect 28 0 27 0;
+#X connect 29 0 30 0;
+#X connect 30 0 13 1;
